@@ -16,7 +16,9 @@ gRectangle = Rectangle(Point(940,100),Point (850,150))
 gRectangle.setFill(color_rgb(40,230,30))
 gRectangle.draw(shapesWin)
 
-
+pOval = Oval(Point(100,930), Point(250,850))
+pOval.setFill(color_rgb(200,20,200))
+pOval.draw(shapesWin)
 
 
 
