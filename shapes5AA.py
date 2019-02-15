@@ -1,38 +1,37 @@
 #shapes5AA.py by akhi abdullah 
 from graphics import*
-
+winX = 500
+winY = 500
+#--------------Window --------------------------
 shapesWin = GraphWin("blue triangle",500,500)
-shapesWin.setCoords(90,90,950,950)
+shapesWin.setCoords(0,0,500,500)
 
-bTri = Polygon(Point(100,100), Point(150,200), Point(200,100))
-bTri.setFill(color_rgb(30,30,230))
+#--------------Blue Triangle----------------------
+bTri = Polygon(Point(50,50), Point(75,100), Point(100,50))
+bTri.setFill("navy blue")
 bTri.draw(shapesWin)
 
-rCircle = Circle(Point(910,910), 30.5)
+#---------------Red Circle-------------------
+rCircle = Circle(Point(450,450), 25.5)
 rCircle.setFill(color_rgb(230,10,10))
 rCircle.draw(shapesWin)
 
-gRectangle = Rectangle(Point(940,100),Point (850,150))
-gRectangle.setFill(color_rgb(40,230,30))
+#---------------Green Rectangle--------------------
+gRectangle = Rectangle(Point(470,50),Point (425,75))
+gRectangle.setFill(color_rgb(40,255,30))
 gRectangle.draw(shapesWin)
 
-pOval = Oval(Point(100,930), Point(250,850))
+#----------------Purple Oval------------------------
+pOval = Oval(Point(50,465), Point(125,425))
 pOval.setFill(color_rgb(200,20,200))
 pOval.draw(shapesWin)
 
+#------------------Blue Diamond----------------
+bDiamond = Polygon(Point(winX/2-100,winY/2), Point(winX/2,winY/2+100), Point(winX/2+100,winY/2), Point(winX/2,winY/2-100))
+bDiamond.setFill("light blue")
+bDiamond.draw(shapesWin)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#--------------window------------
 shapesWin.getMouse()
 shapesWin.close()
